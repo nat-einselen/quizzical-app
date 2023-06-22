@@ -36,6 +36,9 @@
   color: #4D5B9E
 }
 
+.questions-container {
+  width: 100%;
+}
 
 .number-questions, .difficulty {
   font-size: 1.2rem;
@@ -100,11 +103,20 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .answer-container {
   display: flex;
+  flex-direction: column;
 }
+
+@media only screen and (min-width: 768px) {
+  .answer-container {
+    flex-direction: row;
+  }
+}
+
 
 .score-container {
   display: flex;
@@ -222,3 +234,4 @@ animation: 2s anim-popoutin ease infinite;
 /*************************************************/
 /***********media queries*************************/
 /*************************************************/
+
